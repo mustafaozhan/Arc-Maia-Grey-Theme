@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo mkdir /usr/share/icons/Arc-Maia-Grey;
-sudo mv * /usr/share/icons/Arc-Maia-Grey;
+
+sudo mv * /usr/share/themes/
 cd ..;
 rm -rf Arc-Maia-Grey;
