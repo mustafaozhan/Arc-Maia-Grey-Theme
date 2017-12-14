@@ -1,0 +1,72 @@
+style "notify-window" {
+  XfceNotifyWindow::summary-bold = 1
+  XfceNotifyWindow::border-color = "#1c1c1c"
+  XfceNotifyWindow::border-color-hover = "#1c1c1c"
+  XfceNotifyWindow::border-radius = 3.0
+  XfceNotifyWindow::border-width = 1.0
+  XfceNotifyWindow::border-width-hover = 1.0
+
+  bg[NORMAL] = "#303030"
+}
+
+style "notify-button" {
+  bg[NORMAL] = "#4a4a4a"
+  bg[PRELIGHT] = "#666666"
+  bg[ACTIVE] = "#999999"
+
+  fg[NORMAL] = "#c4c4c4"
+  fg[PRELIGHT] = "#c4c4c4"
+  fg[ACTIVE] = "#ffffff"
+
+  engine "murrine" {
+    gradient_shades = { 1.0, 1.0, 1.0, 1.0 }
+    border_shades = { 1.0, 1.0 }
+    roundness = 2
+    textstyle = 0
+  }
+}
+
+style "notify-text" {
+  GtkWidget::link-color = "#999999"
+
+  fg[NORMAL] = "#c4c4c4"
+  fg[PRELIGHT] = "#c4c4c4"
+  fg[ACTIVE] = "#c4c4c4"
+
+  engine "murrine" {
+    textstyle = 0
+  }
+}
+
+style "notify-summary" {
+    font_name = "Bold"
+}
+
+style "notify-progressbar" {
+  GtkProgressBar::min-horizontal-bar-height = 4
+
+  xthickness   = 0
+  ythickness   = 0
+
+  fg[PRELIGHT] = "#000000"
+  bg[NORMAL]   = "#999999"
+  bg[ACTIVE] = "#1D1F26"
+  bg[SELECTED] = "#999999"
+
+  engine "murrine" {
+    gradient_shades = { 1.0, 1.0, 1.0, 1.0 }
+    border_shades = { 1.0, 1.0 }
+    trough_shades = { 1.0, 1.0 }
+    trough_border_shades = { 1.0, 1.0 }
+    progressbarstyle = 0
+    roundness = 2
+    textstyle = 0
+  }
+}
+
+class "XfceNotifyWindow" style "notify-window"
+widget "XfceNotifyWindow.*.summary" style "notify-summary"
+widget_class "XfceNotifyWindow.*<GtkButton>" style "notify-button"
+widget_class "XfceNotifyWindow.*.<GtkLabel>" style "notify-text"
+widget_class "XfceNotifyWindow.*.<GtkProgress>" style "notify-progressbar"
+widget_class "XfceNotifyWindow.*.<GtkProgressBar>" style "notify-progressbar"
