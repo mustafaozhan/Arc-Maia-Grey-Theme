@@ -15,3 +15,10 @@ Grey version of popular Arc theme colored by Manjaro Maia color
 git clone https://github.com/mustafaozhan/Arc-Maia-Grey-Theme.git && cd Arc-Maia-Grey-Theme && chmod +x install.sh && sh install.sh
 
 ```
+# Thanks to
+
+<a href="https://github.com/horst3180/arc-theme">arc-theme</a>
+
+<a href="https://github.com/eti0/arc-grey-theme">arc-grey-theme</a>
+
+This theme modified version of two of given themes
