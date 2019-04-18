@@ -24,3 +24,8 @@ git clone https://github.com/mustafaozhan/Arc-Maia-Grey-Theme.git && cd Arc-Maia
 <a href="https://github.com/eti0/arc-grey-theme">arc-grey-theme</a>
 
 This theme modified version of two of given themes
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/mustafaozhan/Arc-Maia-Grey-Theme/badge.svg?style=beer-square)](https://beerpay.io/mustafaozhan/Arc-Maia-Grey-Theme)  [![Beerpay](https://beerpay.io/mustafaozhan/Arc-Maia-Grey-Theme/make-wish.svg?style=flat-square)](https://beerpay.io/mustafaozhan/Arc-Maia-Grey-Theme?focus=wish)
